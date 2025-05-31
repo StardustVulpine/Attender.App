@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Attender-App")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a8984f9636ad81c02b055b1e941cd5684c4446ce")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb4291a61c3b513aa806ace8907eb600cfeba90f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Attender-App")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Attender-App")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
