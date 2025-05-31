@@ -455,3 +455,4 @@ CodeCoverage/
 TestResult.xml
 nunit-*.xml
 /.vs
+/Attender-App/obj/Debug
