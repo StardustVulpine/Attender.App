@@ -456,3 +456,4 @@ TestResult.xml
 nunit-*.xml
 /.vs
 /Attender-App/obj/Debug
+/Attender-App/obj
