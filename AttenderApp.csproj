@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UseWPF>true</UseWPF>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="Assets\" />
+      <Folder Include="Core\Enums\" />
+      <Folder Include="Core\Interfaces\" />
+      <Folder Include="Resources\Images\" />
+      <Folder Include="Resources\Localization\" />
+      <Folder Include="Resources\Styles\" />
+      <Folder Include="Services\" />
+      <Folder Include="Utilities\" />
+      <Folder Include="ViewModels\" />
+      <Folder Include="Views\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Page Update="MainWindow.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <XamlRuntime>Wpf</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
+      <PackageReference Include="Nager.Date" Version="2.8.6" />
+      <PackageReference Include="QuestPDF" Version="2025.5.0" />
+      <PackageReference Include="System.Text.Json" Version="10.0.0-preview.4.25258.110" />
+    </ItemGroup>
+
+</Project>
