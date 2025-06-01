@@ -455,5 +455,5 @@ CodeCoverage/
 TestResult.xml
 nunit-*.xml
 /.vs
-/Attender-App/obj/Debug
-/Attender-App/obj
+/AttenderApp/obj/Debug
+/AttenderApp/obj
