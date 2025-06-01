@@ -6,9 +6,11 @@
         xmlns:local="clr-namespace:AttenderApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    
+    
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="20"/>
+            <RowDefinition Height="60"/>
             <RowDefinition/>
             <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
@@ -16,8 +18,80 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         
-        <!-- Menu Bar -->
-        <Rectangle Grid.Row="0" Fill="DarkGray"/>
+        <!-- Navigation Bar -->
+        
+        <Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            
+            
+            <!-- User Controls Menu -->
+            <Menu Grid.Row="0">
+                <MenuItem Header="File">
+                    <MenuItem Header="New Organization"></MenuItem>
+                    <MenuItem Header="Open..."></MenuItem>
+                    <MenuItem Header="Save"></MenuItem>
+                    <MenuItem Header="Export to PDF"></MenuItem>
+                    <MenuItem Header="Print"></MenuItem>
+                    <MenuItem Header="Exit"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="Edit">
+                    <MenuItem Header="Undo"></MenuItem>
+                    <MenuItem Header="Redo"></MenuItem>
+                    <MenuItem Header="Cut"></MenuItem>
+                    <MenuItem Header="Copy"></MenuItem>
+                    <MenuItem Header="Paste"></MenuItem>
+                    <MenuItem Header="Add Employee"></MenuItem>
+                    <MenuItem Header="Remove Employee"></MenuItem>
+                    <MenuItem Header="Edit Employee"></MenuItem>
+                    <MenuItem Header="Manage Holidays"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="View">
+                    <MenuItem Header="Switch View"></MenuItem>
+                    <MenuItem Header="Zoom">
+                        <MenuItem Header="Zoom In"></MenuItem>
+                        <MenuItem Header="Zoom Out"></MenuItem>
+                    </MenuItem>
+                    <MenuItem Header="Language"></MenuItem>
+                    <MenuItem Header="Theme"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="Settings">
+                    <MenuItem Header="Preferences"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="Help">
+                    <MenuItem Header="About"></MenuItem>
+                    <MenuItem Header="Check for updates"></MenuItem>
+                    <MenuItem Header="Contact"></MenuItem>
+                    <MenuItem Header="Support"></MenuItem>
+                </MenuItem>
+            </Menu>
+            
+            
+            <!-- Toolbar -->
+            <ToolBarTray Grid.Row="1">
+                <ToolBar ToolBarTray.IsLocked="True">
+                    <Button ToolTip="Add Employee" 
+                            Height="40" Margin="0,-2,0,0">
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <Image Source="pack://application:,,,/Resources/Images/add-person.png" 
+                                   Width="30" Height="30" Margin="0,0,6,0"/>
+                            <TextBlock Text="Add new employee" FontSize="14" FontWeight="Medium" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
+                    <Separator></Separator>
+                    <Button ToolTip="Remove Employee"
+                            Width="40" Height="40" Margin="0,-2,0,0">
+                        <Image Source="pack://application:,,,/Resources/Images/delete-person.png" 
+                               Width="30" Height="30" Margin="0"/>
+                    </Button>
+                </ToolBar>
+            </ToolBarTray>
+            
+             <!-- <Rectangle Grid.Row="1" Fill="DarkGray"/>  -->
+            
+        </Grid>
         
         <!-- Content Pane -->
         <Grid Grid.Row="1">
