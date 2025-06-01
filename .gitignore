@@ -457,3 +457,4 @@ nunit-*.xml
 /.vs
 /AttenderApp/obj/Debug
 /AttenderApp/obj
+/.idea
