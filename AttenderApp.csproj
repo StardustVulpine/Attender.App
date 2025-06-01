@@ -12,7 +12,6 @@
       <Folder Include="Assets\" />
       <Folder Include="Core\Enums\" />
       <Folder Include="Core\Interfaces\" />
-      <Folder Include="Resources\Images\" />
       <Folder Include="Resources\Localization\" />
       <Folder Include="Resources\Styles\" />
       <Folder Include="Services\" />
@@ -34,6 +33,17 @@
       <PackageReference Include="Nager.Date" Version="2.8.6" />
       <PackageReference Include="QuestPDF" Version="2025.5.0" />
       <PackageReference Include="System.Text.Json" Version="10.0.0-preview.4.25258.110" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Resources\Images\delete-person.png" />
+      <Resource Include="Resources\Images\delete-person.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Resource>
+      <None Remove="Resources\Images\add-person.png" />
+      <Resource Include="Resources\Images\add-person.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Resource>
     </ItemGroup>
 
 </Project>
